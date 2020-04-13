@@ -1,0 +1,149 @@
+@import '../../colors';
+@import '../../mixins';
+
+// Common buttons properties
+.primary,
+.secondary,
+.tertiary,
+.quaternary,
+.primary_outline,
+.secondary_outline,
+.tertiary_outline,
+.quaternary_outline {
+  @include default-border;
+  @include default-border-radius;
+  @include default-font-family;
+  cursor: pointer;
+  min-height: 2.2rem;
+  font-size: 1.125rem;
+  padding: 0.5rem 0.75rem;
+  transition-duration: 0.3s;
+  outline: none;
+  font-weight: 700;
+}
+
+.primary {
+  color: $lightest;
+  background-color: $primary-dark;
+  &:hover {
+    background-color: $primary-medium;
+  }
+  &:disabled {
+    color: $primary-light;
+    background-color: $primary-medium;
+    cursor: not-allowed;
+  }
+}
+
+.secondary {
+  color: $primary-dark;
+  background-color: $secondary-dark;
+  &:hover {
+    background-color: $secondary-medium;
+  }
+  &:disabled {
+    color:$primary-light;
+    background-color: $secondary-medium;
+    cursor: not-allowed;
+  }
+}
+
+.tertiary {
+  background-color: $yellow-ocac-dark;
+  color: black;
+  &:hover {
+    background-color: $yellow-ocac-medium;
+  }
+  &:disabled {
+    color: $black-ocac-light;
+    background-color: $yellow-ocac-medium;
+    cursor: not-allowed;
+  }
+}
+
+.quaternary {
+  background-color: $black-ocac-dark;
+  color: $lightest;
+  &:hover {
+    background-color: $black-ocac-medium;
+  }
+  &:disabled {
+    color: $black-ocac-light;
+    background-color: $black-ocac-medium;
+    cursor: not-allowed;
+  }
+}
+
+.primary_outline {
+  color: $primary-dark;
+  background-color: $lightest;
+  border: solid 1px $primary-dark;
+  &:hover {
+    color: $lightest;
+    background-color: $primary-dark;
+  }
+  &:disabled {
+    color: $primary-light;
+    background-color: $lightest;
+    border: solid 1px $primary-light;
+    cursor: not-allowed;
+  }
+}
+
+.secondary_outline {
+  background-color: $lightest;
+  color: $primary-dark;
+  border: solid 1px $secondary-dark;
+  &:hover {
+    color: $lightest;
+    background-color: $secondary-dark;
+  }
+  &:disabled {
+    color: $primary-light;
+    background-color: $lightest;
+    border: solid 1px $secondary-light;
+    cursor: not-allowed;
+  }
+}
+
+.tertiary_outline {
+  background-color: $lightest;
+  color: $black-ocac-dark;
+  border: solid 1px $yellow-ocac-dark;
+  &:hover {
+    color: $black-ocac-dark;
+    background-color: $yellow-ocac-dark;
+  }
+  &:disabled {
+    color: $black-ocac-light;
+    background-color: $lightest;
+    border: solid 1px $yellow-ocac-light;
+    cursor: not-allowed;
+  }
+}
+
+.quaternary_outline {
+  background-color: $lightest;
+  color: $black-ocac-dark;
+  border: solid 1px $black-ocac-dark;
+  &:hover {
+    color: $lightest;
+    background-color: $black-ocac-dark;
+  }
+  &:disabled {
+    color: $black-ocac-light;
+    background-color: $lightest;
+    border: solid 1px $black-ocac-light;
+    cursor: not-allowed;
+  }
+}
+
+.link {
+  cursor: pointer;
+  color: $primary-dark;
+  font-size: 1rem;
+  &:disabled {
+    color: $primary-light;
+    cursor: not-allowed;
+  }
+}

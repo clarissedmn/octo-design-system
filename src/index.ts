@@ -1,3 +1,5 @@
-import MyComponent from './components/MyComponent'
+import MyComponent from "./components/MyComponent";
+import Button from "./components/Button";
+import "./colors.scss";
 
-export { MyComponent }
+export { MyComponent, Button };

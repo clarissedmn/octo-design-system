@@ -1,0 +1,12 @@
+@mixin default-border {
+    border: solid 1px transparent;
+  }
+  
+  @mixin default-border-radius {
+    border-radius: 10px;
+  }
+  
+  @mixin default-font-family {
+    font-family: "Avenir", "Century Gothic", Arial,  sans-serif;
+  }
+  

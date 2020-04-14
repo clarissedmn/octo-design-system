@@ -1,0 +1,262 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import colors from './colorsds.scss';
+
+<Meta title="⚛️Atoms|🌈 Colors" />
+
+# 🌈 Colors
+
+#
+
+#
+
+#### Brand colors define the look of our websites but also our values. In this way, they have to be carefully use.
+
+#
+
+---
+
+- To apply a design system color in your **_SCSS file_**, use a **SCSS variable**.
+
+  **_Exemple :_**
+
+      .my-class {
+
+          color : $primary-dark;
+
+      }
+
+- To apply a design system color in your **_JS file_** :
+
+  1.  Import the **_SCSS file_** :
+
+          import colors from '../../../src/ui/colors.scss';
+
+  2.  Use camelCase :
+
+      **_Exemple :_**
+
+           colors.primaryDark
+
+---
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Primary"
+    colors={[
+      colors.primaryDark,
+      colors.primaryMediumDark,
+      colors.primaryMedium,
+      colors.primaryMediumLight,
+      colors.primaryLight,
+    ]}
+  />
+</ColorPalette>
+
+    $primary-dark: #0e2356;
+    $primary-mediumdark: #3b4270;
+    $primary-medium: #61648c;
+    $primary-mediumlight: #8788a7;
+    $primary-light: #aeaec4;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Secondary"
+    colors={[
+      colors.secondaryDark,
+      colors.secondaryMediumDark,
+      colors.secondaryMedium,
+      colors.secondaryMediumLight,
+      colors.secondaryLight,
+    ]}
+  />
+</ColorPalette>
+
+    $secondary-dark: #00afcb;
+    $secondary-mediumdark: #57bcd4;
+    $secondary-medium: #80cadc;
+    $secondary-mediumlight: #a2d7e5;
+    $secondary-light: #c2e4ee;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Yellow Ocac"
+    colors={[
+      colors.yellowOcacDark,
+      colors.yellowOcacMediumDark,
+      colors.yellowOcacMedium,
+      colors.yellowOcacMediumLight,
+      colors.yellowOcacLight,
+    ]}
+  />
+</ColorPalette>
+
+    $yellow-ocac-dark: #ffb600;
+    $yellow-ocac-mediumdark: #ffc246;
+    $yellow-ocac-medium: #ffce6e;
+    $yellow-ocac-mediumlight: #ffda93;
+    $yellow-ocac-light: #ffe6b7;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Black Ocac"
+    colors={[
+      colors.blackOcacDark,
+      colors.blackOcacMediumDark,
+      colors.blackOcacMedium,
+      colors.blackOcacMediumLight,
+      colors.blackOcacLight,
+    ]}
+  />
+</ColorPalette>
+
+    $black-ocac-dark: #1d1d1b;
+    $black-ocac-mediumdark: #3d3d3b;
+    $black-ocac-medium: #5f5f5e;
+    $black-ocac-mediumlight: #858583;
+    $black-ocac-light: #acacab;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Orange"
+    colors={[
+      colors.orangeDark,
+      colors.orangeMediumDark,
+      colors.orangeMedium,
+      colors.orangeMediumLight,
+      colors.orangeLight,
+    ]}
+  />
+</ColorPalette>
+
+    $orange-dark: #ff7325;
+    $orange-mediumdark: #ff8c4c;
+    $orange-medium: ##ffa36f;
+    $orange-mediumlight: #ffba92;
+    $orange-light: #ffd1b6;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Purple"
+    colors={[
+      colors.purpleDark,
+      colors.purpleMediumDark,
+      colors.purpleMedium,
+      colors.purpleMediumLight,
+      colors.purpleLight,
+    ]}
+  />
+</ColorPalette>
+
+    $purple-dark: #8b69d3;
+    $purple-mediumdark: #a081db;
+    $purple-medium: #b499e2;
+    $purple-mediumlight: #c7b2ea;
+    $purple-light: #dacbf1;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Blue"
+    colors={[
+      colors.blueDark,
+      colors.blueMediumDark,
+      colors.blueMedium,
+      colors.blueMediumLight,
+      colors.blueLight,
+    ]}
+  />
+</ColorPalette>
+
+    $blue-dark: #14c4b3;
+    $blue-mediumdark: #5acebf;
+    $blue-medium: #82d8cc;
+    $blue-mediumlight: #a4e2d8;
+    $blue-light: #c3ece5;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Green"
+    colors={[
+      colors.greenDark,
+      colors.greenMediumDark,
+      colors.greenMedium,
+      colors.greenMediumLight,
+      colors.greenLight,
+    ]}
+  />
+</ColorPalette>
+
+    $green-dark: #2bc82b;
+    $green-mediumdark: #62d254;
+    $green-medium: #87dc78;
+    $green-mediumlight: #a8e599;
+    $green-light: #c6eebb;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Red"
+    colors={[
+      colors.redDark,
+      colors.redMediumDark,
+      colors.redMedium,
+      colors.redMediumLight,
+      colors.redLight,
+    ]}
+  />
+</ColorPalette>
+
+    $red-dark: #ff4338;
+    $red-mediumdark: #ff6a57;
+    $red-medium: #ff8b77;
+    $red-mediumlight: #ffa997;
+    $red-light: #ffc6b9;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome Yellow"
+    colors={[
+      colors.yellowDark,
+      colors.yellowMediumDark,
+      colors.yellowMedium,
+      colors.yellowMediumLight,
+      colors.yellowLight,
+    ]}
+  />
+</ColorPalette>
+
+    $yellow-dark: #ffed00;
+    $yellow-mediumdark: #fff04f;
+    $yellow-medium: #fff277;
+    $yellow-mediumlight: #fff59b;
+    $yellow-light: #fff8bd;
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      colors.darkest,
+      colors.darker,
+      colors.dark,
+      colors.mediumDark,
+      colors.medium,
+      colors.mediumLight,
+      colors.light,
+      colors.lighter,
+      colors.lightest,
+    ]}
+  />
+</ColorPalette>
+
+    $darkest: #333333;
+    $darker: #444444;
+    $dark: #666666;
+    $mediumdark: #999999;
+    $medium: #dddddd;
+    $mediumlight: #eeeeee;
+    $light: #f3f3f3;
+    $lighter: #f8f8f8;
+    $lightest: #ffffff;
+
+```
+
+```

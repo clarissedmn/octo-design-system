@@ -1,0 +1,54 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import Signature from '../../src/components/Illustration';
+
+import colors from './colorsds.scss';
+
+<Meta title="⚛️Atoms|🎨 Illustrations" component={Signature} />
+
+# 🎨 Illustrations
+
+#
+
+#
+
+#### Brand colors define the look of our websites but also our values. In this way, they have to be carefully use.
+
+#
+
+---
+
+To use an illustration,
+
+1. Copy the **name** of SvgComponent
+2. Define its `width` or/and `height` props with a number (pixels)
+3. In `color`, add a [SCSS variable color](/?path=/docs/⚛%EF%B8%8Fatoms-🌈-colors--page)
+4. ♿Specify if the illustration is :
+
+- Descriptive :
+
+```
+
+  <SvgComponent width={number} height={number} color="..."/>
+
+```
+
+- Informative (add information in `title` that describe the illustration) :
+
+```
+
+  <SvgComponent title="..." width={number} height={number} color="..." />
+
+```
+
+---
+
+<Preview>
+  <Story name="Illustrations">
+    <Signature width={100} height={100} className="primaryill" />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Signature} />

@@ -1,0 +1,23 @@
+@import '../../../mixins.scss';
+
+.XL_paragraph,
+.L_paragraph,
+.M_paragraph
+ {
+  @include default-font-family;
+}
+
+.XL_paragraph{
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+
+.L_paragraph{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.M_paragraph{
+  font-size: 1.125rem;
+  font-weight: 400;
+}

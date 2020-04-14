@@ -1,0 +1,70 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Title from '../../src/components/Typography/Title';
+import Paragraph from '../../src/components/Typography/Paragraph';
+import '../../src/components/Illustration';
+
+<Meta title="⚛️Atoms|✏️Typography" />
+
+# ✏️ Typography
+
+#
+
+#
+
+#### Typography specifies the fonts that can be use in order to keep a brand's font consistent.
+
+#### It is an essential element of visual identity, carries the messages of the brand and reflects part of its "soul".
+
+#
+
+---
+
+**Fonts** used for our digital product are specified as below (in order of priority):
+
+1. Avenir
+2. Century Gothic
+
+---
+
+# Title
+
+To use a title,
+
+1. Specify the `level` of the title between 1 & 4 (corresponding to `h1`, `h2`, `h3` & `h4`)
+2. Define its `children`
+
+<Preview>
+  <Story name="Title">
+    <div>
+      <Title level={1}>h1 heading</Title>
+      <Title level={2}>h2 heading</Title>
+      <Title level={3}>h3 heading</Title>
+      <Title level={4}>h4 heading</Title>
+    </div>
+  </Story>
+</Preview>
+
+### Title Props
+
+<Props of={Title} />
+
+# Paragraph
+
+To use a title,
+
+1. Specify the `level` of the paragraph between M, L & XL
+2. Define its `children`
+
+<Preview>
+  <Story name="Paragraph">
+    <div>
+      <Paragraph level="XL">XL Paragraph</Paragraph>
+      <Paragraph level="L">L Paragraph</Paragraph>
+      <Paragraph level="M">M Paragraph</Paragraph>
+    </div>
+  </Story>
+</Preview>
+
+### Paragraph Props
+
+<Props of={Paragraph} />

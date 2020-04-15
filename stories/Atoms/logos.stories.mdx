@@ -1,0 +1,86 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import Acronym from '../../src/components/Logos/Acronym';
+import Corporate from '../../src/components/Logos/Corporate';
+import Coded from '../../src/components/Logos/Coded';
+
+import './ds.logos.scss';
+
+<Meta title="⚛️Atoms|💎 Logos" />
+
+# 💎 Logos
+
+#
+
+#
+
+#### OCTO Technology is represented by two logos. A corporate one, used most of the time and a coded logo that will appear rarely.
+
+#
+
+To use a logo,
+
+1. Copy the **name** of SvgComponent
+2. Define its `width` or/and `height` props with a number (pixels)
+3. Specify `white` props on dark background
+4. ♿ Add information in `title` that describe the function of the logo
+
+**_Exemple :_**
+
+- Colors Logo :
+
+```
+    <SvgComponent width={number} height={number} title="..."/>
+
+```
+
+- Monochrome Logo :
+
+```
+    <SvgComponent width={number} height={number} title="..." white />
+```
+
+---
+
+### Corporate Logo
+
+The **Corporate Logo** must to be used on the homepage.
+
+<Preview>
+  <Story name="Corporate Logo">
+    <div>
+      <Corporate width={25} height={125} />
+      <Corporate className="background" width={125} height={125} white />
+    </div>
+  </Story>
+</Preview>
+
+### Coded Logo
+
+The **Coded Logo** is used in the elements supporting our brand image and our expertise.
+
+<Preview>
+  <Story name="Coded Logo">
+    <div>
+      <Coded width={125} height={125} />
+      <Coded className="background" width={125} height={125} white />
+    </div>
+  </Story>
+</Preview>
+
+### Acronym
+
+The **Acronym logo** must to be used on every pages except the homepage.
+
+<Preview>
+  <Story name="Acronym">
+    <div>
+      <Acronym width={100} height={100} />
+      <Acronym className="background" width={100} height={100} white />
+    </div>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Acronym} />

@@ -7,12 +7,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   kind:
     | "primary"
     | "secondary"
-    | "tertiary"
-    | "quaternary"
     | "primary_outline"
     | "secondary_outline"
-    | "tertiary_outline"
-    | "quaternary_outline"
     | "link";
   /** Choose an icon */
   label: string;

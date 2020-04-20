@@ -3,6 +3,8 @@ import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import Acronym from '../../src/components/Logos/Acronym';
 import Corporate from '../../src/components/Logos/Corporate';
 import Coded from '../../src/components/Logos/Coded';
+import OcacAcronym from '../../src/components/Logos/OcacAcronym';
+
 
 import './ds.logos.scss';
 
@@ -79,6 +81,19 @@ The **Acronym logo** must to be used on every pages except the homepage.
       <Acronym width={100} height={100} color="secondary"/>
       <Acronym width={100} height={100} color="twotone"/>
       <Acronym className="background" width={100} height={100} color="white" />
+    </div>
+  </Story>
+</Preview>
+
+### OCAC Acronym
+
+The **OCAC Acronym logo** must to be used on every pages except the homepage.
+
+<Preview>
+  <Story name="Ocac Acronym">
+    <div>
+      <OcacAcronym width={100} height={100} color="primary"/>
+      <OcacAcronym className="background" width={100} height={100} color="white" />
     </div>
   </Story>
 </Preview>

@@ -1,9 +1,13 @@
 @import "../../colors.scss";
 @import "../../mixins";
 
-.primaryill {
+.primary {
   fill: $primary-dark;
 }
-.secondaryill {
+.secondary {
   fill: $secondary-dark;
+}
+
+.white { 
+  fill: $lightest; 
 }

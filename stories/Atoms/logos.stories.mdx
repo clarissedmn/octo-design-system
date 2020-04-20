@@ -3,6 +3,8 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import Acronym from "../../src/components/Logos/Acronym";
 import Corporate from "../../src/components/Logos/Corporate";
 import Coded from "../../src/components/Logos/Coded";
+import AcnCorporate from "../../src/components/Logos/AcnCorporate";
+import AcnCoded from "../../src/components/Logos/AcnCoded";
 import OcacAcronym from "../../src/components/Logos/OcacAcronym";
 import OcacCorporate from "../../src/components/Logos/OcacCorporate";
 
@@ -44,12 +46,12 @@ To use a logo,
 
 ---
 
-### Corporate Logo
+### OCTO Corporate Logo
 
-The **Corporate Logo** must to be used on the homepage.
+The **OCTO Corporate Logo** must to be used on the homepage.
 
 <Preview>
-  <Story name="Corporate Logo">
+  <Story name="OCTO Corporate Logo">
     <div>
       <Corporate width={25} height={125} />
       <Corporate className="background" width={125} height={125} white />
@@ -57,15 +59,41 @@ The **Corporate Logo** must to be used on the homepage.
   </Story>
 </Preview>
 
-### Coded Logo
+### OCTO Coded Logo
 
-The **Coded Logo** is used in the elements supporting our brand image and our expertise.
+The **OCTO Coded Logo** is used in the elements supporting our brand image and our expertise.
 
 <Preview>
-  <Story name="Coded Logo">
+  <Story name="OCTO Coded Logo">
     <div>
       <Coded width={125} height={125} />
       <Coded className="background" width={125} height={125} white />
+    </div>
+  </Story>
+</Preview>
+
+### OCTO Accenture Corporate Logo
+
+The **OCTO Accenture Corporate Logo** must to be used on the homepage.
+
+<Preview>
+  <Story name="OCTO Accenture Corporate Logo">
+    <div>
+      <AcnCorporate width={25} height={125} />
+      <AcnCorporate className="background" width={125} height={125} white />
+    </div>
+  </Story>
+</Preview>
+
+### OCTO Accenture Coded Logo
+
+The **OCTO Accenture Coded Logo** is used in the elements supporting our brand image and our expertise.
+
+<Preview>
+  <Story name="OCTO Accenture Coded Logo">
+    <div>
+      <AcnCoded width={125} height={125} />
+      <AcnCoded className="background" width={125} height={125} white />
     </div>
   </Story>
 </Preview>

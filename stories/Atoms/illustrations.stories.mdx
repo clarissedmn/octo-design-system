@@ -1,8 +1,8 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import classNames from "classnames";
 import Signature from "../../src/components/Illustration/ThereIsABetterWay";
-import Why from "../../src/components/Illustration/Why"
-
+import Why from "../../src/components/Illustration/Why";
+import CodedTape from "../../src/components/Illustration/CodedTape";
 
 import "./ds.logos.scss";
 
@@ -50,7 +50,12 @@ To use an illustration,
     <div>
       <Signature width={100} height={100} color="primary" />
       <Signature width={100} height={100} color="secondary" />
-      <Signature width={100} height={100} color="white" className="background" />
+      <Signature
+        width={100}
+        height={100}
+        color="white"
+        className="background"
+      />
     </div>
   </Story>
 </Preview>
@@ -61,6 +66,21 @@ To use an illustration,
       <Why width={300} height={300} color="primary" />
       <Why width={300} height={300} color="secondary" />
       <Why width={300} height={300} color="white" className="background" />
+    </div>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Coded Tape">
+    <div>
+      <CodedTape width={900} height={900} color="primary" />
+      <CodedTape width={900} height={900} color="secondary" />
+      <CodedTape
+        width={900}
+        height={900}
+        color="white"
+        className="background"
+      />
     </div>
   </Story>
 </Preview>

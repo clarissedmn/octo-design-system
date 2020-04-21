@@ -1,5 +1,13 @@
-@import '../../src/colors.scss';
+@import "../../src/colors.scss";
 
 .background {
   background-color: $primary-dark;
+}
+
+.spacing > * {
+  margin-right: 20px;
+
+  &:last-child {
+    margin: 0;
+  }
 }

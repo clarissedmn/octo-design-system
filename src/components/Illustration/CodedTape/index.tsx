@@ -2,10 +2,10 @@ import * as React from "react";
 
 import "../../index.scss";
 
-const imgRatio = 1;
+const imgRatio = 32;
 const defaultSize = {
   width: "500px",
-  height: "500px",
+  height: `${500 / imgRatio}px`,
 };
 
 interface IllustrationProps {

@@ -22,7 +22,7 @@ export default function Acronym({
   width,
   height,
   text,
-  color,
+  color = "primary",
   className,
   ...restProps
 }: Props) {

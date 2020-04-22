@@ -23,7 +23,6 @@ export default function CodedTape({
   width,
   height,
   text,
-
   color = "primary",
   ...restProps
 }: IllustrationProps) {

@@ -15,14 +15,14 @@ interface Props {
   /** The information that describe the `svg` element  */
   text: string;
   /** Define the color used to paint the `svg` element	 */
-  white?: string;
+  color?: "white" | "primary";
 }
 
 export default function AcnCodedLogo({
   width,
   height,
   text,
-  white,
+  color = "primary",
   ...restProps
 }: Props) {
   let svgWidth = defaultSize.width;
@@ -38,7 +38,7 @@ export default function AcnCodedLogo({
     svgWidth = `${height * imgRatio}px`;
   }
 
-  return white ? (
+  return color === "white" ? (
     <svg
       role="link"
       preserveAspectRatio="xMidYMid meet"

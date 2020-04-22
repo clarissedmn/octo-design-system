@@ -41,7 +41,7 @@ To use a logo,
 - Monochrome Logo :
 
 ```
-    <SvgComponent width={number} height={number} title="..." white />
+    <SvgComponent width={number} height={number} title="..." color="white"/>
 ```
 
 ---
@@ -53,8 +53,8 @@ The **OCTO Corporate Logo** must to be used on the homepage.
 <Preview>
   <Story name="OCTO Corporate Logo">
     <div className="spacing">
-      <Corporate width={80} height={80} />
-      <Corporate className="background" width={80} height={80} white />
+      <Corporate width={80} height={80} color="primary" />
+      <Corporate className="background" width={80} height={80} color="white" />
     </div>
   </Story>
 </Preview>
@@ -66,8 +66,8 @@ The **OCTO Coded Logo** is used in the elements supporting our brand image and o
 <Preview>
   <Story name="OCTO Coded Logo">
     <div className="spacing">
-      <Coded width={80} height={80} />
-      <Coded className="background" width={80} height={80} white />
+      <Coded width={80} height={80} color="primary" />
+      <Coded className="background" width={80} height={80} color="white" />
     </div>
   </Story>
 </Preview>
@@ -79,8 +79,13 @@ The **OCTO Accenture Corporate Logo** must to be used on the homepage.
 <Preview>
   <Story name="OCTO Accenture Corporate Logo">
     <div className="spacing">
-      <AcnCorporate width={125} height={125} />
-      <AcnCorporate className="background" width={125} height={125} white />
+      <AcnCorporate width={125} height={125} color="primary" />
+      <AcnCorporate
+        className="background"
+        width={125}
+        height={125}
+        color="white"
+      />
     </div>
   </Story>
 </Preview>
@@ -92,8 +97,8 @@ The **OCTO Accenture Coded Logo** is used in the elements supporting our brand i
 <Preview>
   <Story name="OCTO Accenture Coded Logo">
     <div className="spacing">
-      <AcnCoded width={125} height={125} />
-      <AcnCoded className="background" width={125} height={125} white />
+      <AcnCoded width={125} height={125} color="primary" />
+      <AcnCoded className="background" width={125} height={125} color="white" />
     </div>
   </Story>
 </Preview>
@@ -121,7 +126,12 @@ The **OCAC Coporate logo** must to be used on the homepage.
   <Story name="Ocac Coporate">
     <div className="spacing">
       <OcacCorporate width={100} height={100} color="primary" />
-      <OcacCorporate className="background" width={100} height={100} white />
+      <OcacCorporate
+        className="background"
+        width={100}
+        height={100}
+        color="white"
+      />
     </div>
   </Story>
 </Preview>

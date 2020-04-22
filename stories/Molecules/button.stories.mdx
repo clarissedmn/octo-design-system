@@ -6,8 +6,9 @@
 
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import Button from "../../src/components/Button";
+import Signature from "../../src/components/Illustration/ThereIsABetterWay"
 
-import "./button.scss";
+import "../ds.style.scss";
 
 <Meta title="🧬Molecules|Button" />
 
@@ -48,15 +49,10 @@ In OCTO Design System, we provide three types of button :
 
 <Preview>
   <Story name="All Buttons">
-    <div>
-      <Button className="btn" kind="primary" label="Primary" />
-      <Button className="btn" kind="primary_outline" label="Outline" />
-      <Button
-        className="btn"
-        kind="link"
-        href="https://octo.com"
-        label="Link"
-      />
+    <div className="spacing">
+      <Button label="Primary" />
+      <Button kind="outline" label="Outline" />
+      <Button kind="link" href="https://octo.com" label="Link" />
     </div>
   </Story>
 </Preview>
@@ -69,9 +65,8 @@ In OCTO Design System, we provide three types of button :
 
 <Preview>
   <Story name="Primary Button">
-    <div>
-      <Button className="btn" kind="primary" label="Primary" />
-      <Button className="btn" kind="secondary" label="Primary" />
+    <div className="spacing">
+      <Button label="Primary" />
     </div>
   </Story>
 </Preview>
@@ -80,9 +75,8 @@ In OCTO Design System, we provide three types of button :
 
 <Preview>
   <Story name="Outline Button">
-    <div>
-      <Button className="btn" kind="primary_outline" label="Outline" />
-      <Button className="btn" kind="secondary_outline" label="Outline" />
+    <div className="spacing">
+      <Button kind="outline" label="Outline" />
     </div>
   </Story>
 </Preview>
@@ -91,7 +85,7 @@ In OCTO Design System, we provide three types of button :
 
 <Preview>
   <Story name="Link Button">
-    <div>
+    <div className="spacing">
       <Button kind="link" href="https://octo.com" label="Link" />
     </div>
   </Story>
@@ -101,24 +95,22 @@ In OCTO Design System, we provide three types of button :
 
 <Preview>
   <Story name="Icon Button">
-    <div>
+    <div className="spacing">
       <Button
-        className="btn"
-        kind="primary"
+      
         label="Primary"
         iconPosition={
           "left" && (
-            <ThereIsABetterWay width={100} height={100} color="primaryDark" />
+            <Signature width={100} height={100} color="primaryDark" />
           )
         }
       />
       <Button
-        className="btn"
-        kind="primary_outline"
+        kind="outline"
         label="Outline"
         iconPosition={
           "left" && (
-            <ThereIsABetterWay width={100} height={100} color="primaryDark" />
+            <Signature width={100} height={100} color="primaryDark" />
           )
         }
       />
@@ -128,7 +120,7 @@ In OCTO Design System, we provide three types of button :
         label="Link"
         iconPosition={
           "left" && (
-            <ThereIsABetterWay width={100} height={100} color="primaryDark" />
+            <Signature width={100} height={100} color="primaryDark" />
           )
         }
       />
@@ -140,9 +132,9 @@ In OCTO Design System, we provide three types of button :
 
 <Preview>
   <Story name="Disabled Button">
-    <div>
-      <Button className="btn" kind="primary" label="Primary" disabled />
-      <Button className="btn" kind="primary_outline" label="Outline" disabled />
+    <div className="spacing">
+      <Button label="Primary" disabled />
+      <Button kind="outline" label="Outline" disabled />
       <Button kind="link" href="https://octo.com" label="Link" disabled />
     </div>
   </Story>

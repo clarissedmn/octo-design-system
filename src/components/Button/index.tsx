@@ -6,9 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** Set the status of button */
   kind:
     | "primary"
-    | "secondary"
-    | "primary_outline"
-    | "secondary_outline"
+    | "outline"
     | "link";
   /** Choose an icon */
   label: string;
@@ -25,7 +23,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button({
-  kind,
+  kind = "primary",
   label,
   icon,
   iconPosition,
@@ -37,7 +35,7 @@ export default function Button({
 }: ButtonProps) {
   return kind === "link" ? (
     <a
-      className={classNames(className, kind)}
+      className={classNames(className, kind, { disabled })}
       href={href}
       rel="noopener noreferrer"
       target="_blank"

@@ -1,11 +1,10 @@
-import * as React from "react";
+import React from "react";
 
 const imgRatio = 1;
 const defaultSize = {
-  width: "100px",
-  height: `${100 / imgRatio}px`,
+  width: 50,
+  height: 50 / imgRatio,
 };
-
 interface Props {
   /** The width of the `svg` element */
   width?: number;
@@ -30,21 +29,21 @@ export default function OcacAcronym({
   let svgHeight = defaultSize.height;
 
   if (width) {
-    svgWidth = `${width}px`;
-    svgHeight = `${width / imgRatio}px`;
+    svgWidth = width;
+    svgHeight = width / imgRatio;
   }
 
   if (height) {
-    svgHeight = `${height}px`;
-    svgWidth = `${height * imgRatio}px`;
+    svgHeight = height;
+    svgWidth = height * imgRatio;
   }
 
   return (
     <svg
       role="link"
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Calque_1"
       x={0}
       viewBox="0 0 212.6 212.6"
@@ -56,7 +55,6 @@ export default function OcacAcronym({
       </a>
       <path
         className={color}
-        stroke="#002458"
         strokeWidth={5.679}
         strokeMiterlimit={10}
         d="M31.686 148.221L32.3 94.55"

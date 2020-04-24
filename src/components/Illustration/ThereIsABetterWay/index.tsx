@@ -1,12 +1,13 @@
-import * as React from "react";
+import React from "react";
 
 import "../../index.scss";
 
 const imgRatio = 1;
 const defaultSize = {
-  width: "500px",
-  height: "500px",
+  width: 100,
+  height: 100 / imgRatio,
 };
+
 
 interface IllustrationProps {
   /** The width of the `svg` element */
@@ -32,20 +33,20 @@ export default function Signature({
   let svgHeight = defaultSize.height;
 
   if (width) {
-    svgWidth = `${width}px`;
-    svgHeight = `${width / imgRatio}px`;
+    svgWidth = width;
+    svgHeight = width / imgRatio;
   }
 
   if (height) {
-    svgHeight = `${height}px`;
-    svgWidth = `${height * imgRatio}px`;
+    svgHeight = height;
+    svgWidth = height * imgRatio;
   }
 
   return (
     <svg
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Calque_2"
       x={0}
       y={0}

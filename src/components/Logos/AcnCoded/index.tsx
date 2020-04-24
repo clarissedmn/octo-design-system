@@ -1,9 +1,9 @@
-import * as React from "react";
+import React from "react";
 
-const imgRatio = 1.6;
+const imgRatio = 0.6;
 const defaultSize = {
-  width: "200px",
-  height: `${200 / imgRatio}px`,
+  width: 50,
+  height: 50 / imgRatio,
 };
 
 
@@ -16,12 +16,14 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "white" | "primary";
+  className?: string;
 }
 
 export default function AcnCodedLogo({
   width,
   height,
   text,
+  className,
   color = "primary",
   ...restProps
 }: Props) {
@@ -29,26 +31,27 @@ export default function AcnCodedLogo({
   let svgHeight = defaultSize.height;
 
   if (width) {
-    svgWidth = `${width}px`;
-    svgHeight = `${width / imgRatio}px`;
+    svgWidth = width;
+    svgHeight = width / imgRatio;
   }
 
   if (height) {
-    svgHeight = `${height}px`;
-    svgWidth = `${height * imgRatio}px`;
+    svgHeight = height;
+    svgWidth = height * imgRatio;
   }
 
   return color === "white" ? (
     <svg
       role="link"
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Logo2_white"
       x={0}
       y={0}
       viewBox="0 0 608.03 392.81"
       xmlSpace="preserve"
+      className={className}
       {...restProps}
     >
       <a href="https://octo.com">
@@ -125,8 +128,8 @@ export default function AcnCodedLogo({
     <svg
       role="link"
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Logo2"
       x={0}
       y={0}

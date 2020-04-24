@@ -1,11 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 import "../../index.scss";
 
-const imgRatio = 32;
+const imgRatio = 0.03;
 const defaultSize = {
-  width: "500px",
-  height: `${500 / imgRatio}px`,
+  width: 25,
+  height: 25 / imgRatio,
 };
 
 interface IllustrationProps {
@@ -17,12 +17,14 @@ interface IllustrationProps {
   text?: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "primary" | "secondary" | "white";
+  className?: string;
 }
 
 export default function CodedTape({
   width,
   height,
   text,
+  className,
   color = "primary",
   ...restProps
 }: IllustrationProps) {
@@ -30,25 +32,26 @@ export default function CodedTape({
   let svgHeight = defaultSize.height;
 
   if (width) {
-    svgWidth = `${width}px`;
-    svgHeight = `${width / imgRatio}px`;
+    svgWidth = width;
+    svgHeight = width / imgRatio;
   }
 
   if (height) {
-    svgHeight = `${height}px`;
-    svgWidth = `${height * imgRatio}px`;
+    svgHeight = height;
+    svgWidth = height * imgRatio;
   }
 
   return (
     <svg
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Calque_2"
       x={0}
       y={0}
       viewBox="0 0 654.67 20"
       xmlSpace="preserve"
+      className={className}
       {...restProps}
     >
       {text && <text opacity="0">{text}</text>}

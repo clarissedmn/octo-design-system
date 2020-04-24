@@ -1,9 +1,9 @@
-import * as React from "react";
+import React from "react";
 
 const imgRatio = 1;
 const defaultSize = {
-  width: "100px",
-  height: `${200 / imgRatio}px`,
+  width: 50,
+  height: 50 / imgRatio,
 };
 
 interface Props {
@@ -30,21 +30,20 @@ export default function Acronym({
   let svgHeight = defaultSize.height;
 
   if (width) {
-    svgWidth = `${width}px`;
-    svgHeight = `${width / imgRatio}px`;
+    svgWidth = width;
+    svgHeight = width / imgRatio;
   }
 
   if (height) {
-    svgHeight = `${height}px`;
-    svgWidth = `${height * imgRatio}px`;
+    svgHeight = height;
+    svgWidth = height * imgRatio;
   }
-
   return color === "twotone" ? (
     <svg
       role="link"
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Calque_1"
       x={0}
       y={0}
@@ -87,8 +86,8 @@ export default function Acronym({
     <svg
       role="link"
       preserveAspectRatio="xMidYMid meet"
-      width={svgWidth}
-      height={svgHeight}
+      width={`${svgHeight}px`}
+      height={`${svgWidth}px`}
       id="prefix__Calque_1"
       x={0}
       y={0}

@@ -6,16 +6,18 @@ const defaultSize = {
   height: 50 / imgRatio,
 };
 interface Props {
-  /** The width of the `svg` element */
+  /** Specify the width of the `logo` element */
   width?: number;
-  /** The height of the `svg` element */
+  /** Specify the height of the `logo` element */
   height?: number;
-  /** The information that describe the `svg` element  */
-  text: string;
-  /** Define the color used to paint the `svg` element	 */
+  /** The information that describe the `logo` element  */
+  text?: string;
+  /** Provide the the color used to paint the `logo` element:
+   *  "primary" | "white"
+   */
   color?: "primary" | "white";
-     /** Redirect url of logo */
-     href?: string; 
+  /** Redirect url of logo */
+  href?: string;
   className?: string;
 }
 
@@ -24,7 +26,7 @@ export default function OcacAcronym({
   height,
   text,
   color = "primary",
-  href, 
+  href,
   className,
   ...restProps
 }: Props) {

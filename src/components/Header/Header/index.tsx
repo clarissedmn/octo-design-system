@@ -9,6 +9,7 @@ interface HeaderProps {
    /** Define the color used to paint the `header` element	 */
    color?: "primary" | "white";
    className?: string;
+   /** Set the header sticky */
    sticky?: boolean;
 }
 

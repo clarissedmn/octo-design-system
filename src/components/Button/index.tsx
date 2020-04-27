@@ -3,12 +3,14 @@ import classNames from "classnames";
 import "./index.scss";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  /** Set the status of button */
+  /** Set the kind of button: 
+   * "primary-btn"| "outline-btn" | "link"
+   */
   kind:
     | "primary-btn"
     | "outline-btn"
     | "link";
-  /** Choose an icon */
+  /** Set the label of button */
   label: string;
   /** Set the icon component of button */
   icon?: React.ReactNode;
@@ -18,7 +20,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
   /** Redirect url of link button */
   href?: string;
-  /** Disabled state of button */
+  /** Disable state of button */
   disabled?: boolean;
 }
 

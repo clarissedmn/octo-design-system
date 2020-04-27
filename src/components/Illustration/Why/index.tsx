@@ -9,13 +9,15 @@ const defaultSize = {
 };
 
 interface IllustrationProps {
-  /** The width of the `svg` element */
+  /** Specify the width of the `svg` element */
   width?: number;
-  /** The height of the `svg` element */
+  /** Specify the height of the `svg` element */
   height?: number;
-  /** The information that describe the `svg` element  */
+  /** Provide the information that describe the `svg` element  */
   text?: string;
-  /** Define the color used to paint the `svg` element	 */
+  /** Define the color used to paint the `svg` element:
+   *  "primary" | "secondary" | "white"
+   */
   color?: "primary" | "secondary" | "white";
   className?: string;
 }

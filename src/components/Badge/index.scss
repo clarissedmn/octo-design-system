@@ -1,0 +1,55 @@
+@import "../../colors";
+@import "../../mixins";
+
+// Common buttons properties
+.badge {
+  @include default-border;
+  @include default-border-radius;
+  @include default-font-family;
+  min-height: 2rem;
+  width: fit-content;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  transition-duration: 0.3s;
+  outline: none;
+  &.primary-badge {
+    color: $lightest;
+    border: solid 1px $primary-dark;
+    background-color: $primary-dark;
+  }
+  &.secondary-badge {
+    color: $lightest;
+    border: solid 1px $secondary-dark;
+    background-color: $secondary-dark;
+  }
+  &.sucess-badge {
+    color: $lightest;
+    background-color: $green-dark;
+    border: solid 1px $green-dark;
+  }
+  &.danger-badge {
+    color: $lightest;
+    background-color: $red-dark;
+    border: solid 1px $red-dark;
+  }
+  &.default-badge {
+    color: $lightest;
+    background-color: $mediumdark;
+    border: solid 1px $mediumdark;
+  }
+  &.info-badge {
+    color: $lightest;
+    background-color: $blue-dark;
+    border: solid 1px $blue-dark;
+  }
+  &.warning-badge {
+    color: $lightest;
+    background-color: $orange-dark;
+    border: solid 1px $orange-dark;
+  }
+  &.new-badge {
+    color: $lightest;
+    background-color: $purple-dark;
+    border: solid 1px $purple-dark;
+  }
+}

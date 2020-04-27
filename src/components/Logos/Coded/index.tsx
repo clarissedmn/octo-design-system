@@ -7,16 +7,18 @@ const defaultSize = {
 };
 
 interface Props {
-  /** The width of the `svg` element */
+  /** Specify the width of the `logo` element */
   width?: number;
-  /** The height of the `svg` element */
+  /** Specify the height of the `logo` element */
   height?: number;
-  /** The information that describe the `svg` element  */
-  text: string;
-  /** Define the color used to paint the `svg` element	 */
-  color?: "white" | "primary";
-     /** Redirect url of logo */
-     href?: string; 
+  /** The information that describe the `logo` element  */
+  text?: string;
+  /** Provide the the color used to paint the `logo` element:
+   *  "primary" | "white"
+   */
+  color?: "primary" | "white";
+  /** Redirect url of logo */
+  href?: string;
   className?: string;
 }
 
@@ -25,7 +27,7 @@ export default function CodedLogo({
   height,
   text,
   color = "primary",
-  href, 
+  href,
   className,
   ...restProps
 }: Props) {
@@ -55,7 +57,7 @@ export default function CodedLogo({
       className={className}
       {...restProps}
     >
-       <a href={href}>
+      <a href={href}>
         <text opacity="0">{text}</text>
       </a>
       <path
@@ -109,7 +111,7 @@ export default function CodedLogo({
       viewBox="0 0 608.031 249.48"
       {...restProps}
     >
-       <a href={href}>
+      <a href={href}>
         <text opacity="0">{text}</text>
       </a>
       <path

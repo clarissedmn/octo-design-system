@@ -3,17 +3,18 @@ import classNames from "classnames";
 import "./index.scss";
 
 export interface HeaderMenuItemProps {
-  /** Choose an icon */
+  /** Set the label of the `item` element */
   label: string;
-  /** Redirect url of link button */
+  /** Redirect url of `item` element*/
   href?: string;
    /** Set the handler to handle click event */
    onClick?: () => void;
-  /** Define the color used to paint the `item` element	 */
+  /** Define the color used to paint the `item` element : "primary" | "white"	 */
   color?: "primary" | "white";
   className?: string;
-  /** Disabled state of HeaderMenuItem */
+  /** Disabled state of the `item` element */
   disabled?: boolean;
+  /** Apply a current style on the `item` element */
   current: boolean;
 }
 

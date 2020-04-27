@@ -1,22 +1,23 @@
 import React from "react";
 
-
 const imgRatio = 0.6;
 const defaultSize = {
   width: 50,
   height: 50 / imgRatio,
 };
 interface Props {
-  /** The width of the `svg` element */
+  /** Specify the width of the `logo` element */
   width?: number;
-  /** The height of the `svg` element */
+  /** Specify the height of the `logo` element */
   height?: number;
-  /** The information that describe the `svg` element  */
-  text: string;
-  /** Define the color used to paint the `svg` element	 */
-  color?: "white" | "primary";
-     /** Redirect url of logo */
-     href?: string; 
+  /** The information that describe the `logo` element  */
+  text?: string;
+  /** Provide the the color used to paint the `logo` element:
+   *  "primary" | "white"
+   */
+  color?: "primary" | "white";
+  /** Redirect url of logo */
+  href?: string;
   className?: string;
 }
 
@@ -26,7 +27,7 @@ export default function AcnCorporateLogo({
   text,
   className,
   color = "primary",
-  href, 
+  href,
   ...restProps
 }: Props) {
   let svgWidth = defaultSize.width;
@@ -56,7 +57,7 @@ export default function AcnCorporateLogo({
       className={className}
       {...restProps}
     >
-       <a href={href}>
+      <a href={href}>
         <text opacity="0">{text}</text>
       </a>
       <style>{`.prefix__st1{fill:#FFFFFF}`}</style>
@@ -143,7 +144,7 @@ export default function AcnCorporateLogo({
       xmlSpace="preserve"
       {...restProps}
     >
-       <a href={href}>
+      <a href={href}>
         <text opacity="0">{text}</text>
       </a>
       <style>

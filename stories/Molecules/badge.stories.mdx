@@ -1,0 +1,29 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Badge from "../../src/components/Badge";
+
+import "../ds.style.scss";
+
+<Meta title="🧬Molecules|Badge" />
+
+# Badge
+
+---
+
+<Preview>
+  <Story name="All Badges">
+    <div className="spacing">
+      <Badge label="Primary" />
+      <Badge label="Secondary" status="secondary-badge" />
+      <Badge label="Sucess" status="sucess-badge" />
+      <Badge label="Danger" status="danger-badge" />
+      <Badge label="Default" status="default-badge" />
+      <Badge label="Info" status="info-badge" />
+      <Badge label="Warning" status="warning-badge" />
+      <Badge label="New" status="new-badge" />
+    </div>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Badge} />

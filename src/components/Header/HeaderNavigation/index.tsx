@@ -13,7 +13,7 @@ export default function HeaderNavigation({
 }: HeaderNavigationProps) {
   return (
     <nav className="header-menu-nav" role="navigation" aria-label={ariaLabel}>
-      <ul>{children}</ul>
+      <ul className="header-menu-list">{children}</ul>
     </nav>
   );
 }

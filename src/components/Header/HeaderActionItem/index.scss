@@ -7,23 +7,22 @@
   text-decoration: none;
   text-align: center;
   font-size: 14px;
-  &.primary{
+  &.primary {
     color: $primary-dark;
   }
-  &.white{
+  &.white {
     color: $lightest;
   }
-  &.current{
+  &.current {
     font-weight: 600;
     text-decoration: underline;
   }
 }
 
-
-li {
+.header-action-item-list {
+  display: inline;
   margin: 0;
   padding: 0;
-  display: inline;
   margin-right: 20px;
   &:last-child {
     margin: 0;

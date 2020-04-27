@@ -27,7 +27,7 @@ export default function HeaderActionItem(
   current}: HeaderActionItemProps
 ) {
   return (
-    <li>
+    <li className="header-action-item-list">
       <a
         className={classNames(
           "header-action-item",

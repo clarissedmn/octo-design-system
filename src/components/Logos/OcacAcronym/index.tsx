@@ -14,6 +14,8 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "primary" | "white";
+     /** Redirect url of logo */
+     href?: string; 
   className?: string;
 }
 
@@ -22,6 +24,7 @@ export default function OcacAcronym({
   height,
   text,
   color = "primary",
+  href, 
   className,
   ...restProps
 }: Props) {
@@ -50,7 +53,7 @@ export default function OcacAcronym({
       className={className}
       {...restProps}
     >
-      <a href="https://octo.com">
+      <a href={href}>
         <text opacity="0">{text}</text>
       </a>
       <path

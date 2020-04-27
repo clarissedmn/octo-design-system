@@ -28,7 +28,7 @@ export default function HeaderMenuItem({
   ...restProps
 }: HeaderMenuItemProps) {
   return (
-    <li>
+    <li className="header-menu-item-list">
       <a
         className={classNames("header-menu-item", className, color, {
           disabled,

@@ -6,7 +6,6 @@ const defaultSize = {
   height: 50 / imgRatio,
 };
 
-
 interface Props {
   /** The width of the `svg` element */
   width?: number;
@@ -16,6 +15,8 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "white" | "primary";
+    /** Redirect url of logo */
+  href?: string; 
   className?: string;
 }
 
@@ -25,6 +26,7 @@ export default function AcnCodedLogo({
   text,
   className,
   color = "primary",
+  href, 
   ...restProps
 }: Props) {
   let svgWidth = defaultSize.width;
@@ -54,8 +56,8 @@ export default function AcnCodedLogo({
       className={className}
       {...restProps}
     >
-      <a href="https://octo.com">
-        <text opacity="0">`${text}`</text>
+      <a href={href}>
+        <text opacity="0">{text}</text>
       </a>
       <style>{`.prefix__st8{fill:#FFFFFF}`}</style>
       <path
@@ -137,8 +139,8 @@ export default function AcnCodedLogo({
       xmlSpace="preserve"
       {...restProps}
     >
-      <a href="https://octo.com">
-        <text opacity="0">`${text}`</text>
+      <a href={href}>
+        <text opacity="0">{text}</text>
       </a>
       <style>
         {

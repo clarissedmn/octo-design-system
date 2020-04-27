@@ -2,8 +2,7 @@
 @import "../../mixins";
 
 // Common buttons properties
-.primary,
-.outline {
+.btn {
   @include default-border;
   @include default-border-radius;
   @include default-font-family;
@@ -13,43 +12,41 @@
   padding: 0.5rem 0.75rem;
   transition-duration: 0.3s;
   outline: none;
-}
-
-.primary {
-  color: $lightest;
-  border: solid 1px $primary-dark;
-  background-color: $primary-dark;
-  &:hover {
-    border: solid 1px $primary-medium;;
-    background-color: $primary-medium;
-  }
-  &:active {
-    border: solid 1px $primary-dark;
-  }
-  &:disabled {
-    color: $light;
-    border: solid 1px $primary-medium;;
-    background-color: $primary-medium;
-    cursor: not-allowed;
-  }
-}
-
-.outline {
-  color: $primary-dark;
-  background-color: $lightest;
-  border: solid 1px $primary-dark;
-  &:hover {
+  &.primary-btn {
     color: $lightest;
+    border: solid 1px $primary-dark;
     background-color: $primary-dark;
+    &:hover {
+      border: solid 1px $primary-medium;
+      background-color: $primary-medium;
+    }
+    &:active {
+      border: solid 1px $primary-dark;
+    }
+    &:disabled {
+      color: $light;
+      border: solid 1px $primary-medium;
+      background-color: $primary-medium;
+      cursor: not-allowed;
+    }
   }
-  &:active {
-    background-color: $primary-medium;
-  }
-  &:disabled {
-    color: $primary-light;
+  &.outline-btn {
+    color: $primary-dark;
     background-color: $lightest;
-    border: solid 1px $primary-light;
-    cursor: not-allowed;
+    border: solid 1px $primary-dark;
+    &:hover {
+      color: $lightest;
+      background-color: $primary-dark;
+    }
+    &:active {
+      background-color: $primary-medium;
+    }
+    &:disabled {
+      color: $primary-light;
+      background-color: $lightest;
+      border: solid 1px $primary-light;
+      cursor: not-allowed;
+    }
   }
 }
 

@@ -15,6 +15,8 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "primary" | "secondary" | "white" | "twotone";
+     /** Redirect url of logo */
+     href?: string; 
   className?: string;
 }
 
@@ -23,6 +25,7 @@ export default function Acronym({
   height,
   text,
   color = "primary",
+  href, 
   className,
   ...restProps
 }: Props) {
@@ -52,8 +55,8 @@ export default function Acronym({
       className={className}
       {...restProps}
     >
-      <a href="https://octo.com">
-        <text opacity="0">`${text}`</text>
+      <a href={href}>
+        <text opacity="0">{text}</text>
       </a>
       <style>{".prefix__st0{fill:#00abc7}"}</style>
       <g id="prefix__Symbols">
@@ -96,8 +99,8 @@ export default function Acronym({
       className={className}
       {...restProps}
     >
-      <a href="https://octo.com">
-        <text opacity="0">`${text}`</text>
+      <a href={href}>
+        <text opacity="0">{text}</text>
       </a>
       <style>{".prefix__st15{fill:#00abc7}"}</style>
       <g aria-hidden="true" id="prefix__Symbols">

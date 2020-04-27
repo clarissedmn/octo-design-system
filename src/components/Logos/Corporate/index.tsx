@@ -15,6 +15,8 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "white" | "primary";
+     /** Redirect url of logo */
+     href?: string; 
   className?: string;
 }
 
@@ -24,6 +26,7 @@ export default function CorporateLogo({
   text,
   className,
   color = "primary",
+  href, 
   ...restProps
 }: Props) {
   let svgWidth = defaultSize.width;
@@ -52,6 +55,9 @@ export default function CorporateLogo({
       className={className}
       {...restProps}
     >
+       <a href={href}>
+        <text opacity="0">{text}</text>
+      </a>
       <g fill="#fff">
         <path d="M584.73 28.208c3.931 3.93 3.931 10.303 0 14.232-3.93 3.929-10.301 3.929-14.23 0s-3.93-10.303 0-14.232 10.301-3.929 14.23 0zM544.605 68.151c3.93 3.93 3.93 10.301 0 14.231-3.929 3.931-10.301 3.931-14.232 0-3.928-3.93-3.928-10.301.003-14.23 3.929-3.93 10.299-3.932 14.229-.001z" />
       </g>
@@ -99,6 +105,9 @@ export default function CorporateLogo({
       viewBox="0 0 567.37 217.54"
       {...restProps}
     >
+       <a href={href}>
+        <text opacity="0">{text}</text>
+      </a>
       <defs>
         <style>
           {
@@ -106,7 +115,6 @@ export default function CorporateLogo({
           }
         </style>
       </defs>
-      <title>{"Logo_OCTO_ACN_Corpo_RVB"}</title>
       <path
         className="prefix__cls-1"
         d="M584.73 28.21a10.06 10.06 0 11-14.23 0 10.06 10.06 0 0114.23 0zM544.61 68.15a10.07 10.07 0 11-14.23 0 10.06 10.06 0 0114.23 0z"

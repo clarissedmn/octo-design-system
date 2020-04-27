@@ -1,0 +1,153 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import HeaderMenuItem from "../../src/components/Header/HeaderMenuItem";
+import HeaderNavigation from "../../src/components/Header/HeaderNavigation";
+import HeaderLogo from "../../src/components/Header/HeaderLogo";
+import HeaderAction from "../../src/components/Header/HeaderAction";
+import HeaderActionItem from "../../src/components/Header/HeaderActionItem";
+import Header from "../../src/components/Header/Header";
+import Acronym from "../../src/components/Logos/Acronym";
+import Corporate from "../../src/components/Logos/Corporate";
+
+import "../ds.style.scss";
+
+<Meta title="🧬Molecules|Header" />
+
+# Header
+
+#
+
+#
+
+#### Buttons allow to trigger an operation.
+
+#
+
+---
+
+The `Header` component is composed of : 
+
+   - `HeaderLogo` component
+   - `HeaderNavigation` component
+   - `HeaderAction` component  
+---
+
+### Homepage
+
+This template header must be use on the homepage.
+
+<Preview>
+  <Story name="White Homepage Header">
+    <Header color="white">
+      <HeaderLogo>
+        <Corporate text="My website (logo)" />
+      </HeaderLogo>
+      <HeaderNavigation ariaLabel="Menu">
+        <HeaderMenuItem label="Home" href="https://octo.com" current />
+        <HeaderMenuItem label="Link 1" href="https://octo.com" />
+        <HeaderMenuItem label="Link 2" href="https://octo.com" />
+        <HeaderMenuItem label="Link 3" href="https://octo.com" />
+      </HeaderNavigation>
+      <HeaderAction ariaLabel="Translation Swicth">
+        <HeaderActionItem label="Fr" href="https://octo.com" />
+        <HeaderActionItem label="En" href="https://octo.com" current />
+      </HeaderAction>
+    </Header>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Primary Homepage Header">
+    <Header>
+      <HeaderLogo>
+        <Corporate color="white" text="My website (logo)" />
+      </HeaderLogo>
+      <HeaderNavigation ariaLabel="Menu">
+        <HeaderMenuItem color="white" label="Home" href="https://octo.com" />
+        <HeaderMenuItem color="white" label="Link 1" href="https://octo.com" />
+        <HeaderMenuItem
+          color="white"
+          label="Link 2"
+          href="https://octo.com"
+          current
+        />
+        <HeaderMenuItem color="white" label="Link 3" href="https://octo.com" />
+      </HeaderNavigation>
+      <HeaderAction ariaLabel="Translation Switch">
+        <HeaderActionItem color="white" label="Fr" href="https://octo.com" />
+        <HeaderActionItem
+          color="white"
+          label="En"
+          href="https://octo.com"
+          current
+        />
+      </HeaderAction>
+    </Header>
+  </Story>
+</Preview>
+
+### Other Pages
+
+This template header must be use on on every pages except the homepage.
+
+<Preview>
+  <Story name="White Pages Header">
+    <Header color="white" sticky>
+      <HeaderLogo>
+        <Acronym text="My website (logo)" color="twotone" />
+      </HeaderLogo>
+      <HeaderNavigation ariaLabel="Menu">
+        <HeaderMenuItem label="Home" href="https://octo.com" current />
+        <HeaderMenuItem label="Link 1" href="https://octo.com" />
+        <HeaderMenuItem label="Link 2" href="https://octo.com" />
+        <HeaderMenuItem label="Link 3" href="https://octo.com" />
+      </HeaderNavigation>
+      <HeaderAction ariaLabel="Translation switch">
+        <HeaderActionItem label="Fr" href="https://octo.com" />
+        <HeaderActionItem label="En" href="https://octo.com" current />
+      </HeaderAction>
+    </Header>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Primary Pages Header">
+    <Header sticky>
+      <HeaderLogo>
+        <Acronym color="white" text="My website (logo)" />
+      </HeaderLogo>
+      <HeaderNavigation ariaLabel="Menu">
+        <HeaderMenuItem color="white" label="Home" href="https://octo.com" />
+        <HeaderMenuItem color="white" label="Link 1" href="https://octo.com" />
+        <HeaderMenuItem
+          color="white"
+          label="Link 2"
+          href="https://octo.com"
+          current
+        />
+        <HeaderMenuItem color="white" label="Link 3" href="https://octo.com" />
+      </HeaderNavigation>
+      <HeaderAction ariaLabel="Translation Switch">
+        <HeaderActionItem color="white" label="Fr" href="https://octo.com" />
+        <HeaderActionItem
+          color="white"
+          label="En"
+          href="https://octo.com"
+          current
+        />
+      </HeaderAction>
+    </Header>
+  </Story>
+</Preview>
+
+## `<Header />`
+
+<Props of={Header} />
+
+## `<HeaderAction />` & `<HeaderNavigation />`
+
+<Props of={HeaderAction} />
+
+## `<HeaderMenuItem />` & `<HeaderActionItem />`
+
+<Props of={HeaderActionItem} />

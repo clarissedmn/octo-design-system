@@ -5,8 +5,8 @@ import "./index.scss";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** Set the status of button */
   kind:
-    | "primary"
-    | "outline"
+    | "primary-btn"
+    | "outline-btn"
     | "link";
   /** Choose an icon */
   label: string;
@@ -23,7 +23,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button({
-  kind = "primary",
+  kind = "primary-btn",
   label,
   icon,
   iconPosition,
@@ -39,6 +39,7 @@ export default function Button({
       href={href}
       rel="noopener noreferrer"
       target="_blank"
+      onClick={onClick}
     >
       {iconPosition === "left" && icon}
       {label}
@@ -46,7 +47,7 @@ export default function Button({
     </a>
   ) : (
     <button
-      className={classNames(className, kind)}
+      className={classNames("btn", className, kind)}
       onClick={onClick}
       disabled={disabled}
       {...htmlProps}

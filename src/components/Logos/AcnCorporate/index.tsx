@@ -15,6 +15,8 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "white" | "primary";
+     /** Redirect url of logo */
+     href?: string; 
   className?: string;
 }
 
@@ -24,6 +26,7 @@ export default function AcnCorporateLogo({
   text,
   className,
   color = "primary",
+  href, 
   ...restProps
 }: Props) {
   let svgWidth = defaultSize.width;
@@ -53,6 +56,9 @@ export default function AcnCorporateLogo({
       className={className}
       {...restProps}
     >
+       <a href={href}>
+        <text opacity="0">{text}</text>
+      </a>
       <style>{`.prefix__st1{fill:#FFFFFF}`}</style>
       <path
         aria-hidden="true"
@@ -137,6 +143,9 @@ export default function AcnCorporateLogo({
       xmlSpace="preserve"
       {...restProps}
     >
+       <a href={href}>
+        <text opacity="0">{text}</text>
+      </a>
       <style>
         {
           ".prefix__st2{fill:#00b0cc}.prefix__st3,.prefix__st4{fill:#001e57}.prefix__st5{fill-rule:evenodd;clip-rule:evenodd}.prefix__st6{fill:#1d1d1b}.prefix__st7{fill:#ffb600}"

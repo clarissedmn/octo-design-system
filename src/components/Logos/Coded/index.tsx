@@ -15,6 +15,8 @@ interface Props {
   text: string;
   /** Define the color used to paint the `svg` element	 */
   color?: "white" | "primary";
+     /** Redirect url of logo */
+     href?: string; 
   className?: string;
 }
 
@@ -23,6 +25,7 @@ export default function CodedLogo({
   height,
   text,
   color = "primary",
+  href, 
   className,
   ...restProps
 }: Props) {
@@ -52,6 +55,9 @@ export default function CodedLogo({
       className={className}
       {...restProps}
     >
+       <a href={href}>
+        <text opacity="0">{text}</text>
+      </a>
       <path
         d="M244.628 126.974c-11.43-6.793-19.111-19.261-19.111-33.495 0-14.235 7.681-26.704 19.111-33.498V24.695c-29.859 8.625-51.765 36.185-51.765 68.784 0 32.598 21.907 60.157 51.765 68.779v-35.284z"
         fill="#fff"
@@ -103,6 +109,9 @@ export default function CodedLogo({
       viewBox="0 0 608.031 249.48"
       {...restProps}
     >
+       <a href={href}>
+        <text opacity="0">{text}</text>
+      </a>
       <path
         d="M244.628 126.974c-11.43-6.793-19.111-19.261-19.111-33.495 0-14.235 7.681-26.704 19.111-33.498V24.695c-29.859 8.625-51.765 36.185-51.765 68.784 0 32.598 21.907 60.157 51.765 68.779v-35.284z"
         fill="#0e2356"

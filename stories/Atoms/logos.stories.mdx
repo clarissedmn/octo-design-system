@@ -27,21 +27,21 @@ To use a logo,
 1. Copy the **name** of SvgComponent
 2. Define its `width` or/and `height` props with a number (pixels)
 3. Specify `white` props on dark background
-4. ♿ Add information in `title` that describe the function of the logo
+4. ♿ Add information in `text` that describe the function of the logo
 
 **_Exemple :_**
 
 - Colors Logo :
 
 ```
-    <SvgComponent width={number} height={number} title="..."/>
+    <SvgComponent width={number} height={number} text="..."/>
 
 ```
 
 - Monochrome Logo :
 
 ```
-    <SvgComponent width={number} height={number} title="..." color="white"/>
+    <SvgComponent width={number} height={number} text="..." color="white"/>
 ```
 
 ---
@@ -53,8 +53,14 @@ The **OCTO Corporate Logo** must to be used on the homepage.
 <Preview>
   <Story name="OCTO Corporate Logo">
     <div className="spacing">
-      <Corporate width={100} />
-      <Corporate className="background" width={100} color="white" />
+      <Corporate width={100} text="My Website (logo)" href="https://octo.com" />
+      <Corporate
+        className="background"
+        width={100}
+        color="white"
+        text="My Website (logo)"
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>
@@ -66,8 +72,13 @@ The **OCTO Coded Logo** is used in the elements supporting our brand image and o
 <Preview>
   <Story name="OCTO Coded Logo">
     <div className="spacing">
-      <Coded width={100} />
-      <Coded className="background" width={100} color="white" />
+      <Coded width={100} href="https://octo.com" />
+      <Coded
+        className="background"
+        width={100}
+        color="white"
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>
@@ -79,8 +90,13 @@ The **OCTO Accenture Corporate Logo** must to be used on the homepage.
 <Preview>
   <Story name="OCTO Accenture Corporate Logo">
     <div className="spacing">
-      <AcnCorporate width={100} />
-      <AcnCorporate className="background" width={100} color="white" />
+      <AcnCorporate width={100} href="https://octo.com" />
+      <AcnCorporate
+        className="background"
+        width={100}
+        color="white"
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>
@@ -92,8 +108,13 @@ The **OCTO Accenture Coded Logo** is used in the elements supporting our brand i
 <Preview>
   <Story name="OCTO Accenture Coded Logo">
     <div className="spacing">
-      <AcnCoded width={100}/>
-      <AcnCoded className="background" width={100} color="white" />
+      <AcnCoded width={100} href="https://octo.com" />
+      <AcnCoded
+        className="background"
+        width={100}
+        color="white"
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>
@@ -105,10 +126,15 @@ The **Acronym logo** must to be used on every pages except the homepage.
 <Preview>
   <Story name="Acronym">
     <div className="spacing">
-      <Acronym width={100} />
-      <Acronym width={100} color="secondary" />
-      <Acronym width={100} color="twotone" />
-      <Acronym className="background" width={100} color="white" />
+      <Acronym width={100} href="https://octo.com" />
+      <Acronym width={100} color="secondary" href="https://octo.com" />
+      <Acronym width={100} color="twotone" href="https://octo.com" />
+      <Acronym
+        className="background"
+        width={100}
+        color="white"
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>
@@ -120,8 +146,13 @@ The **OCAC Coporate logo** must to be used on the homepage.
 <Preview>
   <Story name="Ocac Coporate">
     <div className="spacing">
-      <OcacCorporate width={100} />
-      <OcacCorporate className="background" color="white" width={100} />
+      <OcacCorporate width={100} href="https://octo.com" />
+      <OcacCorporate
+        className="background"
+        color="white"
+        width={100}
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>
@@ -133,8 +164,13 @@ The **OCAC Acronym logo** must to be used on every pages except the homepage.
 <Preview>
   <Story name="Ocac Acronym">
     <div className="spacing">
-      <OcacAcronym color="primary" width={100} />
-      <OcacAcronym className="background" width={100} color="white" />
+      <OcacAcronym color="primary" width={100} href="https://octo.com" />
+      <OcacAcronym
+        className="background"
+        width={100}
+        color="white"
+        href="https://octo.com"
+      />
     </div>
   </Story>
 </Preview>

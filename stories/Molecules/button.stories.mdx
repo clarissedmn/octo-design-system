@@ -1,12 +1,6 @@
-<!-- // import React from 'react';
-// import { action } from '@storybook/addon-actions';
-// import { withA11y } from '@storybook/addon-a11y';
-// import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
-// import './button.scss'; -->
-
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import Button from "../../src/components/Button";
-import Signature from "../../src/components/Illustration/ThereIsABetterWay"
+import Signature from "../../src/components/Illustration/ThereIsABetterWay";
 
 import "../ds.style.scss";
 
@@ -51,7 +45,7 @@ In OCTO Design System, we provide three types of button :
   <Story name="All Buttons">
     <div className="spacing">
       <Button label="Primary" />
-      <Button kind="outline" label="Outline" />
+      <Button kind="outline-btn" label="Outline" />
       <Button kind="link" href="https://octo.com" label="Link" />
     </div>
   </Story>
@@ -76,7 +70,7 @@ In OCTO Design System, we provide three types of button :
 <Preview>
   <Story name="Outline Button">
     <div className="spacing">
-      <Button kind="outline" label="Outline" />
+      <Button kind="outline-btn" label="Outline" />
     </div>
   </Story>
 </Preview>
@@ -97,21 +91,16 @@ In OCTO Design System, we provide three types of button :
   <Story name="Icon Button">
     <div className="spacing">
       <Button
-      
         label="Primary"
         iconPosition={
-          "left" && (
-            <Signature width={100} height={100} color="primaryDark" />
-          )
+          "left" && <Signature width={100} height={100} color="primaryDark" />
         }
       />
       <Button
-        kind="outline"
+        kind="outline-btn"
         label="Outline"
         iconPosition={
-          "left" && (
-            <Signature width={100} height={100} color="primaryDark" />
-          )
+          "left" && <Signature width={100} height={100} color="primaryDark" />
         }
       />
       <Button
@@ -119,9 +108,7 @@ In OCTO Design System, we provide three types of button :
         href="https://octo.com"
         label="Link"
         iconPosition={
-          "left" && (
-            <Signature width={100} height={100} color="primaryDark" />
-          )
+          "left" && <Signature width={100} height={100} color="primaryDark" />
         }
       />
     </div>
@@ -134,7 +121,7 @@ In OCTO Design System, we provide three types of button :
   <Story name="Disabled Button">
     <div className="spacing">
       <Button label="Primary" disabled />
-      <Button kind="outline" label="Outline" disabled />
+      <Button kind="outline-btn" label="Outline" disabled />
       <Button kind="link" href="https://octo.com" label="Link" disabled />
     </div>
   </Story>

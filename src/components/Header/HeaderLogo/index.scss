@@ -1,0 +1,10 @@
+@import "../../../colors";
+@import "../../../mixins";
+
+// Common buttons properties
+.header-logo {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}

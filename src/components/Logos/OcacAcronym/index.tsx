@@ -51,7 +51,7 @@ export default function OcacAcronym({
       {...restProps}
     >
       <a href="https://octo.com">
-        <text opacity="0">`${text}`</text>
+        <text opacity="0">{text}</text>
       </a>
       <path
         className={color}

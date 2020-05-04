@@ -6,8 +6,10 @@ import "./index.scss";
 
 interface HeaderProps {
   children?: React.ReactNode;
-   /** Define the color used to paint the `header` element	 */
-   color?: "primary" | "white";
+   /** Define the color used to paint the `header` element : 
+    * "primary" | "white"| "transparent"
+   	 */
+   color?: "primary" | "white"| "transparent";
    className?: string;
    /** Set the header sticky */
    sticky?: boolean;

@@ -6,6 +6,10 @@
   text-decoration: none;
   text-align: center;
   font-weight: 100;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
   &.primary {
     color: $primary-dark;
   }
@@ -13,7 +17,7 @@
     color: $lightest;
   }
   &.current {
-    font-weight: 600;
+    font-weight: 800;
   }
   &:hover {
     text-decoration: underline;

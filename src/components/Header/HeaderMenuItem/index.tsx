@@ -15,7 +15,7 @@ export interface HeaderMenuItemProps {
   /** Disabled state of the `item` element */
   disabled?: boolean;
   /** Apply a current style on the `item` element */
-  current: boolean;
+  current?: boolean;
 }
 
 export default function HeaderMenuItem({

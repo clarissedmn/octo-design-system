@@ -1,9 +1,9 @@
-import typescript from "rollup-plugin-typescript2";
 import commonjs from "rollup-plugin-commonjs";
-import external from "rollup-plugin-peer-deps-external";
 import resolve from "rollup-plugin-node-resolve";
+import external from "rollup-plugin-peer-deps-external";
+import typescript from "rollup-plugin-typescript2";
 import scss from "rollup-plugin-scss";
-
+// import scssVariable from 'rollup-plugin-sass-variables';
 import pkg from "./package.json";
 
 export default {
@@ -44,6 +44,10 @@ export default {
     }),
     scss({
       output: true,
+      ignore: [
+        './src/colors.scss'
+      ]
     }),
+    // scssVariable()
   ],
 };

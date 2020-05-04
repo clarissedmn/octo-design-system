@@ -5,7 +5,7 @@ import "./index.scss";
 interface BadgeProps {
   /** Set the status of the badge :  
    * "primary-badge" | "secondary-badge" | "sucess-badge" | "danger-badge" | "default-badge" | "info-badge" | "warning-badge" | "new-badge" */
-  status:
+  status?:
     | "primary-badge"
     | "secondary-badge"
     | "sucess-badge"

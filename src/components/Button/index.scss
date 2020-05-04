@@ -17,11 +17,12 @@
     border: solid 1px $primary-dark;
     background-color: $primary-dark;
     &:hover {
-      border: solid 1px $primary-medium;
-      background-color: $primary-medium;
+      border: solid 1px $primary-dark;
+      background-color: $primary-dark;
     }
     &:active {
-      border: solid 1px $primary-dark;
+      background-color: $secondary-dark;
+      border: solid 1px $secondary-dark;
     }
     &:disabled {
       color: $light;
@@ -39,7 +40,8 @@
       background-color: $primary-dark;
     }
     &:active {
-      background-color: $primary-medium;
+      background-color: $secondary-dark;
+      border: solid 1px $secondary-dark;
     }
     &:disabled {
       color: $primary-light;
@@ -56,10 +58,10 @@
   color: $primary-dark;
   font-size: 1.125rem;
   &:hover {
-    color: $primary-medium;
+    color: $primary-dark;
   }
   &:active {
-    color: $primary-dark;
+    color: $secondary-dark;
   }
 }
 

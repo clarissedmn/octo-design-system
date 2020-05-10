@@ -13,8 +13,8 @@ export default function HeaderAction({
   ariaLabel,
 }: HeaderActionProps) {
   return (
-    <div className="header-action" aria-label={ariaLabel}>
-      {children}
-    </div>
+    <nav className="header-action" role="navigation" aria-label={ariaLabel}>
+      <ul>{children}</ul>
+    </nav>
   );
 }

@@ -7,8 +7,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
    * "primary-btn"| "outline-btn" | "link"
    */
   kind:
-    | "primary-btn"
-    | "outline-btn"
+    | "primary"
+    | "outline"
     | "link";
   /** Set the label of button */
   label: string;
@@ -25,7 +25,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button({
-  kind = "primary-btn",
+  kind = "primary",
   label,
   icon,
   iconPosition,
@@ -49,7 +49,7 @@ export default function Button({
     </a>
   ) : (
     <button
-      className={classNames("btn", className, kind)}
+      className={classNames("btn", className, `btn-${kind}`)}
       onClick={onClick}
       disabled={disabled}
       {...htmlProps}

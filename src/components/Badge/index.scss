@@ -12,42 +12,42 @@
   padding: 0.3rem 0.5rem;
   transition-duration: 0.3s;
   outline: none;
-  &.primary-badge {
+  &.badge-primary {
     color: $lightest;
     border: solid 1px $primary-dark;
     background-color: $primary-dark;
   }
-  &.secondary-badge {
+  &.badge-secondary {
     color: $lightest;
     border: solid 1px $secondary-dark;
     background-color: $secondary-dark;
   }
-  &.sucess-badge {
+  &.badge-sucess {
     color: $lightest;
     background-color: $green-dark;
     border: solid 1px $green-dark;
   }
-  &.danger-badge {
+  &.badge-danger {
     color: $lightest;
     background-color: $red-dark;
     border: solid 1px $red-dark;
   }
-  &.default-badge {
+  &.badge-default {
     color: $lightest;
     background-color: $mediumdark;
     border: solid 1px $mediumdark;
   }
-  &.info-badge {
+  &.badge-info {
     color: $lightest;
     background-color: $blue-dark;
     border: solid 1px $blue-dark;
   }
-  &.warning-badge {
+  &.badge-warning {
     color: $lightest;
     background-color: $orange-dark;
     border: solid 1px $orange-dark;
   }
-  &.new-badge {
+  &.badge-new {
     color: $lightest;
     background-color: $purple-dark;
     border: solid 1px $purple-dark;

@@ -3,13 +3,10 @@ import classNames from "classnames";
 import "./index.scss";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  /** Set the kind of button: 
+  /** Set the kind of button:
    * "primary-btn"| "outline-btn" | "link"
    */
-  kind:
-    | "primary"
-    | "outline"
-    | "link";
+  kind: "primary" | "outline" | "link";
   /** Set the label of button */
   label: string;
   /** Set the icon component of button */
@@ -35,19 +32,23 @@ export default function Button({
   disabled = false,
   ...htmlProps
 }: ButtonProps) {
-  return kind === "link" ? (
-    <a
-      className={classNames(className, kind, { disabled })}
-      href={href}
-      rel="noopener noreferrer"
-      target="_blank"
-      onClick={onClick}
-    >
-      {iconPosition === "left" && icon}
-      {label}
-      {iconPosition === "right" && icon}
-    </a>
-  ) : (
+  if (kind === "link") {
+    return (
+      <a
+        className={classNames(className, kind, { disabled })}
+        href={href}
+        rel="noopener noreferrer"
+        target="_blank"
+        onClick={onClick}
+      >
+        {iconPosition === "left" && icon}
+        {label}
+        {iconPosition === "right" && icon}
+      </a>
+    );
+  }
+
+  return (
     <button
       className={classNames("btn", className, `btn-${kind}`)}
       onClick={onClick}

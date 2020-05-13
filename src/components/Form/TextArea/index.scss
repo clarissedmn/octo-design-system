@@ -1,0 +1,42 @@
+@import "../../../colors.scss";
+@import "../../../mixins";
+
+.text-area {
+  margin-bottom: 2rem;
+  .label {
+    @include default-font-family;
+    min-height: 2.2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $primary-dark;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    .helperText {
+      margin-bottom: 0.2rem;
+      color: $medium;
+    }
+  }
+  .text-area-input {
+    @include default-font-family;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid $medium;
+    color: $primary-dark;
+    &::placeholder {
+      color: $medium;
+    }
+    &:focus {
+      color: $primary-dark;
+      border: 1px solid $primary-dark;
+    }
+    &:disabled {
+      pointer-events: none;
+      background-color: $mediumlight;
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default function HeaderAction({
 }: HeaderActionProps) {
   return (
     <nav className="header-action" role="navigation" aria-label={ariaLabel}>
-      <ul>{children}</ul>
+      <ul  className="header-action-list">{children}</ul>
     </nav>
   );
 }

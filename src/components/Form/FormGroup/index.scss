@@ -1,0 +1,9 @@
+@import "../../../colors.scss";
+@import "../../../mixins";
+
+// Common buttons properties
+.form-group {
+  @include default-font-family;
+  color: $primary-dark;
+    display: flex;
+}

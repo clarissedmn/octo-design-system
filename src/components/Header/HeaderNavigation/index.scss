@@ -2,12 +2,11 @@
 @import "../../../mixins";
 
 .header-menu-nav {
-
   &:first-child {
     font-weight: 600;
   }
-}
-.header-menu-list {
-  padding: 0;
-  margin: 0;
+  .header-menu-list {
+    padding: 0;
+    margin: 0;
+  }
 }

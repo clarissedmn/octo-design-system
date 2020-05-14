@@ -4,44 +4,100 @@
 // Common buttons properties
 .badge {
   @include default-border;
-  @include default-border-radius;
   @include default-font-family;
-  min-height: 2rem;
+  border-radius: 3px;
+  min-height: 1.875rem;
   width: fit-content;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   padding: 0.3rem 0.5rem;
   transition-duration: 0.3s;
   outline: none;
   &.badge-primary {
     color: $primary-dark;
     border: solid 1px $primary-dark;
+    &:hover {
+      background-color: $primary-lightest;
+    }
+    &:active {
+      background-color: $primary-dark;
+      color: $lightest;
+    }
   }
   &.badge-secondary {
     color: $primary-dark;
     border: solid 1px $secondary-dark;
+    &:hover {
+      background-color: $secondary-lightest;
+    }
+    &:active {
+      background-color: $secondary-dark;
+      color: $lightest;
+    }
   }
   &.badge-sucess {
     color: $primary-dark;
     border: solid 1px $green-dark;
+    &:hover {
+      background-color: $green-lightest;
+    }
+    &:active {
+      background-color: $green-dark;
+      color: $lightest;
+    }
   }
   &.badge-danger {
     color: $primary-dark;
     border: solid 1px $red-dark;
+    &:hover {
+      background-color: $red-lightest;
+    }
+    &:active {
+      background-color: $red-dark;
+      color: $lightest;
+    }
   }
   &.badge-default {
     color: $primary-dark;
-    border: solid 1px $mediumdark;
+    border: solid 1px $medium;
+    &:hover {
+      background-color: $lighter;
+    }
+    &:active {
+      background-color: $medium;
+      color: $lightest;
+    }
   }
   &.badge-info {
     color: $primary-dark;
     border: solid 1px $blue-dark;
+    &:hover {
+      background-color: $blue-lightest;
+    }
+    &:active {
+      background-color: $blue-dark;
+      color: $lightest;
+    }
   }
   &.badge-warning {
     color: $primary-dark;
     border: solid 1px $orange-dark;
+    &:hover {
+      background-color: $orange-lightest;
+    }
+    &:active {
+      background-color: $orange-dark;
+      color: $lightest;
+    }
   }
   &.badge-new {
     color: $primary-dark;
     border: solid 1px $purple-dark;
+    &:hover {
+      background-color: $purple-lightest;
+    }
+    &:active {
+      background-color: $purple-dark;
+      color: $lightest;
+    }
   }
 }

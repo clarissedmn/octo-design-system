@@ -10,6 +10,7 @@ const colors = {
   secondaryMedium: "#80cadc",
   secondaryMediumLight: "#a2d7e5",
   secondaryLight: "#c2e4ee",
+  secondaryLightest: "#f1f8fb",
   orangeDark: "#ff7325",
   orangeMediumDark: "#ff8c4c",
   orangeMedium: "#ffa36f",

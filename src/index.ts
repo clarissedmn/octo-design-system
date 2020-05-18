@@ -1,6 +1,8 @@
 import "./reboot.css";
 import colors from "./colors";
-import Badge from "./components/Badge";
+import BasicBadge from "./components/Badge/BasicBadge";
+import DeletableBadge from "./components/Badge/DeletableBadge";
+import IconBadge from "./components/Badge/IconBadge";
 import Button from "./components/Button";
 import Header from "./components/Header/Header";
 import HeaderAction from "./components/Header/HeaderAction";
@@ -41,6 +43,8 @@ export {
   HeaderLogo,
   HeaderMenuItem,
   HeaderNavigation,
-  Badge,
+  BasicBadge,
+  DeletableBadge,
+  IconBadge,
   colors,
 };

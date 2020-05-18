@@ -1,17 +1,18 @@
-@import "../../colors";
-@import "../../mixins";
+@import "../../../colors";
+@import "../../../mixins";
 
 // Common buttons properties
 .badge {
   @include default-border;
   @include default-font-family;
   border-radius: 3px;
-  min-height: 1.875rem;
+  height: 1.5rem;
   width: fit-content;
   font-size: 0.75rem;
-  padding: 0.3rem 0.5rem;
   transition-duration: 0.3s;
   outline: none;
+  display: inline-flex;
+  cursor: pointer;
   &.badge-primary {
     color: $primary-dark;
     border: solid 1px $primary-dark;
@@ -60,7 +61,7 @@
     color: $primary-dark;
     border: solid 1px $medium;
     &:hover {
-      background-color: $lighter;
+      background-color: $light;
     }
     &:active {
       background-color: $medium;
@@ -100,4 +101,11 @@
       color: $lightest;
     }
   }
+}
+
+.label-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.188rem 0.375rem;
 }

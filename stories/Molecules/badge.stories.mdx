@@ -1,5 +1,7 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import Badge from "../../src/components/Badge";
+import BasicBadge from "../../src/components/Badge/BasicBadge";
+import DeletableBadge from "../../src/components/Badge/DeletableBadge";
+import IconBadge from "../../src/components/Badge/IconBadge";
 
 import "../ds.style.scss";
 
@@ -12,18 +14,64 @@ import "../ds.style.scss";
 <Preview>
   <Story name="All Badges">
     <div className="spacing">
-      <Badge label="Primary" />
-      <Badge label="Secondary" status="secondary" />
-      <Badge label="Sucess" status="sucess" />
-      <Badge label="Danger" status="danger" />
-      <Badge label="Default" status="default" />
-      <Badge label="Info" status="info" />
-      <Badge label="Warning" status="warning" />
-      <Badge label="New" status="new" />
+      <BasicBadge label="Primary" />
+      <BasicBadge label="Secondary" status="secondary" />
+      <BasicBadge label="Sucess" status="sucess" />
+      <BasicBadge label="Danger" status="danger" />
+      <BasicBadge label="Default" status="default" />
+      <BasicBadge label="Info" status="info" />
+      <BasicBadge label="Warning" status="warning" />
+      <BasicBadge label="New" status="new" />
     </div>
   </Story>
 </Preview>
 
 ## Props
 
-<Props of={Badge} />
+<Props of={BasicBadge} />
+
+# Deletable Badges
+
+---
+
+<Preview>
+  <Story name="Deletable Badges">
+    <div className="spacing">
+      <DeletableBadge label="Primary" deletable />
+      <DeletableBadge label="Secondary" status="secondary" deletable />
+      <DeletableBadge label="Sucess" status="sucess" deletable />
+      <DeletableBadge label="Danger" status="danger" deletable />
+      <DeletableBadge label="Default" status="default" deletable />
+      <DeletableBadge label="Info" status="info" deletable />
+      <DeletableBadge label="Warning" status="warning" deletable />
+      <DeletableBadge label="New" status="new" deletable />
+    </div>
+  </Story>
+</Preview>
+
+# Iconned Badge
+
+---
+
+<Preview>
+  <Story name="Iconned Badges">
+    <div className="spacing">
+      <IconBadge label="Primary" icon="validate" />
+      <IconBadge label="Secondary" status="secondary" icon="validate" />
+      <IconBadge label="Sucess" status="sucess" icon="validate" />
+      <IconBadge label="Danger" status="danger" icon="validate" />
+      <IconBadge label="Default" status="default" icon="validate" />
+      <IconBadge label="Info" status="info" icon="validate" />
+      <IconBadge label="Warning" status="warning" icon="validate" />
+      <IconBadge label="New" status="new" icon="validate" />
+      <IconBadge icon="validate" />
+      <IconBadge status="secondary" icon="validate" />
+      <IconBadge status="sucess" icon="validate" />
+      <IconBadge status="danger" icon="validate" />
+      <IconBadge status="default" icon="validate" />
+      <IconBadge status="info" icon="validate" />
+      <IconBadge status="warning" icon="validate" />
+      <IconBadge status="new" icon="validate" />
+    </div>
+  </Story>
+</Preview>
